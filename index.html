@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/6b88ed3bf3.js" crossorigin="anonymous"></script>
+
+
+    <!-- Daisy UI cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <!-- tailwind cdn -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <!-- custom css -->
+    <style>
+        /* sora font */
+        .sora {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="sora container mx-auto">
+    <!-- hero section -->
+
+
+    <header class="mx-auto max-w-screen-2xl bg-cover bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] px-4 pt-3 lg:px-36">
+
+        <!-- nav bar -->
+        <nav class="">
+            <div class="navbar w-full border  border-b-[#179800] sm:border-none border-x-0 border-t-0">
+                <div class="navbar-start">
+                    <div><img src="c2-assets/logo-header.png" alt=""></div>
+                </div>
+                <div class=" navbar-center hidden md:flex">
+                    <ul class="max-w-80 grid grid-cols-3 justify-center items-center md:gap-x-0 lg:gap-x-1 gap-x-2 px-1">
+                        <li><a class="hover:text-[#179800] cursor-pointer md:text-sm lg:text-base font-normal text-[#111111]">Product</a></li>
+                        <li><a class="hover:text-[#179800] cursor-pointer md:text-sm lg:text-base font-normal text-[#111111]">Services</a></li>
+                        <li><a class="hover:text-[#179800] cursor-pointer md:text-sm lg:text-base font-normal text-[#111111]">contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end max-w-full overflow-hidden">
+                    <!-- drop dawn -->
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 stroke-[#179800]">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- buttons -->
+                    <div class="hidden sm:flex justify-end items-center space-x-3  sm:w-full ">
+                        <div class><a class="cursor-pointer"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                        <div><a class="cursor-pointer"><i class="fa-solid fa-cart-shopping"></i></a></div>
+                        <div><a class="btn border border-[#179800] text-xl font-normal text-[#111111]">Login</a></div>
+                        <div><a class="btn bg-[#179800] text-xl font-normal text-white">Register</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+<!-- banner section -->
+
+    <!-- animation -->
+
+
+
+
+  <!-- tittle -->
+   <h1 class="animate-bounce mx-auto mt-10 sm:mt-20 mb-4 sm:mb-8 max-w-4xl font-semibold text-3xl sm:text-6xl text-center text-[#111111] text-wrap">Freshness <span class="text-[#179800]">You Can <br>
+    Count</span> On, Prices You’ll Love!</h1>
+
+
+<p class="mx-auto max-w-4xl mb-4 sm:mb-8 font-normal text-base sm:text-xl text-[#111111] text-center">We take pride in delivering the freshest vegetables directly from the farm to your doorstep. With every order, you can taste the difference in freshness, flavor, and nutrition!"</p>
+
+<div class="mx-auto mb-0 max-w-screen-lg">
+    <img src="c2-assets/hero-vegetables.png" alt="">
+</div>
+
+    </header>
+</body>
+
+</html>
