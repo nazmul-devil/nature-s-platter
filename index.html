@@ -58,7 +58,10 @@
         <nav class="">
             <div class="navbar w-full border  border-b-[#179800] sm:border-none border-x-0 border-t-0">
                 <div class="navbar-start">
-                    <div><img src="c2-assets/logo-header.png" alt=""></div>
+                    <div><img class="hidden sm:block" src="c2-assets/logo-header.png" alt="">
+                        <img class="sm:hidden
+                        " src="c2-assets/phone-nav.png" alt="">
+                    </div>
                 </div>
                 <div class=" navbar-center hidden md:flex">
                     <ul
@@ -93,11 +96,11 @@
                     </div>
 
                     <!-- buttons -->
-                    <div class="hidden sm:flex justify-end items-center space-x-3  sm:w-full ">
-                        <div class><a class="cursor-pointer"><i class="fa-solid fa-magnifying-glass"></i></a></div>
-                        <div><a class="cursor-pointer"><i class="fa-solid fa-cart-shopping"></i></a></div>
-                        <div><a class="btn border border-[#179800] text-xl font-normal text-[#111111]">Login</a></div>
-                        <div><a class="btn bg-[#179800] text-xl font-normal text-white">Register</a></div>
+                    <div class="hidden sm:inline-block text-center space-x-2  sm:w-full ">
+                        <a class="cursor-pointer"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a class="cursor-pointer"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="btn border border-[#179800] text-xl font-normal text-[#111111]">Login</a>
+                        <a class="btn bg-[#179800] text-xl font-normal text-white">Register</a>
                     </div>
                 </div>
             </div>
@@ -135,8 +138,7 @@
 
 
         <!-- card -->
-        <div
-            class="mt-4 mx-auto sm:mt-8 grid gap-y-3 md:grid-cols-3 gap-x-3 justify-center max-w-full text-center">
+        <div class="mt-4 mx-auto sm:mt-8 grid gap-y-3 md:grid-cols-3 gap-x-3 justify-center max-w-full text-center">
             <!-- card 1 -->
             <div class=" bg-[#EFEBE3]   border-none rounded-2xl">
                 <figure class="px-8 pt-8">
@@ -189,8 +191,127 @@
         </div>
     </section>
 
+    <!-- popular product section -->
+    <section class="mt-16 sm:mt-36 mx-auto max-w-screen-2xl h-auto px-1 py-16 sm:py-36 lg:px-36 bg-cover bg-[#EFEBE3]">
 
-    
+
+        <h1 class=" mt-6 lg:mt-12 mb-6 font-semibold  text-2xl sm:text-4xl text-[#179800]">Popular Products</h1>
+
+        <div class="max-w-full sm:mb-12 grid grid-cols-1 sm:grid-cols-6 justify-between">
+            <div
+                class="w-[98%] col-span-2 relative bg-gradient-to-br from-[#166d07] to-[#a7ff97] rounded-lg pl-8 pr-0  flex flex-col">
+                <h1 class="mt-10 mb-4 font-semibold text-2xl text-white">30% off</h1>
+                <p class="mb-4 max-w-52 text-wrap font-light text-sm  text-[#111111]">Discover a world of treats,toys, and essentials handpicked for</p>
+                <div class="mb-6"><button class="btn font-normal text-lg text">Buy Now</button></div>
+                <div class="absolute right-0 bottom-0 flex justify-end w-full max-h-32 md:max-h-40 lg:max-h-48"><img src="c2-assets/vegetable-offer.png" alt=""></div>
+
+            </div>
+            <div class="mt-4 p-0 col-span-4 sm:ml-4 sm:mt-0 w-[98%] sm:w-4xl grid grid-cols-2 sm:grid-cols-3 grid-rows-4 sm:grid-rows-3 gap-6">
+                <!-- product items -->
+                <div class=" p-2 flex bg-white rounded-lg items-center space-x-4">
+                    <div class=""><img class="bg-[#EFEBE3] p-1 rounded-md" src="c2-assets/onion.png" alt=""></div>
+
+                    <!-- product text -->
+
+                    <div>
+                        <p class="font-normal text-base text-[#111111]" ><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                        <h1 class="font-medium text-lg  text-[#111111]">Onion 1 KG</h1>
+                        <p class="font-medium text-base text-[#111111]">$39.99</p>
+                    </div>
+                </div>
+                <div class=" p-2 flex bg-white rounded-lg items-center space-x-4">
+                    <div class=""><img class="bg-[#EFEBE3] p-1 rounded-md" src="c2-assets/Group 16 (1).png" alt=""></div>
+
+                    <!-- product text -->
+
+                    <div>
+                        <p class="font-normal text-base text-[#111111]" ><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                        <h1 class="font-medium text-xl text-[#111111]">Tomato 500 g</h1>
+                        <p class="font-medium text-base text-[#111111]">$39.99</p>
+                    </div>
+                </div>
+                <div class=" p-2 flex bg-white rounded-lg items-center space-x-4">
+                    <div class="bg-"><img class="bg-[#EFEBE3] p-1 rounded-md" src="c2-assets/Group 16 (2).png" alt=""></div>
+
+                    <!-- product text -->
+
+                    <div>
+                        <p class="font-normal text-base text-[#111111]" ><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                        <h1 class="font-medium text-xl text-[#111111]">Potato 1 KG</h1>
+                        <p class="font-medium text-base text-[#111111]">$39.99</p>
+                    </div>
+                </div>
+                <div class=" p-2 flex bg-white rounded-lg items-center space-x-4">
+                    <div class="bg-"><img class="bg-[#EFEBE3] p-1 rounded-md" src="c2-assets/Group 16 (1).png" alt=""></div>
+
+                    <!-- product text -->
+
+                    <div>
+                        <p class="font-normal text-base text-[#111111]" ><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                        <h1 class="font-medium text-xl text-[#111111]">Tomato 500 g</h1>
+                        <p class="font-medium text-base text-[#111111]">$39.99</p>
+                    </div>
+                </div>
+                <div class=" p-2 flex bg-white rounded-lg items-center space-x-4">
+                    <div class="bg-"><img class="bg-[#EFEBE3] p-1 rounded-md" src="c2-assets/onion.png" alt=""></div>
+
+                    <!-- product text -->
+
+                    <div>
+                        <p class="font-normal text-base text-[#111111]" ><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                        <h1 class="font-medium text-xl text-[#111111]">Onion 1 KG</h1>
+                        <p class="font-medium text-base text-[#111111]">$39.99</p>
+                    </div>
+                </div>
+                <div class=" p-2 flex bg-white rounded-lg items-center space-x-4">
+                    <div class="bg-"><img class="bg-[#EFEBE3] p-1 rounded-md" src="c2-assets/Group 16 (2).png" alt=""></div>
+
+                    <!-- product text -->
+
+                    <div>
+                        <p class="font-normal text-base text-[#111111]" ><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                        <h1 class="font-medium text-xl text-[#111111]">Potato 1 KG</h1>
+                        <p class="font-medium text-base text-[#111111]">$39.99</p>
+                    </div>
+                </div>
+                <div class=" p-2 flex bg-white rounded-lg items-center space-x-4">
+                    <div class="bg-"><img class="bg-[#EFEBE3] p-1 rounded-md" src="c2-assets/onion.png" alt=""></div>
+
+                    <!-- product text -->
+
+                    <div>
+                        <p class="font-normal text-base text-[#111111]" ><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                        <h1 class="font-medium text-xl text-[#111111]">Onion 1 KG</h1>
+                        <p class="font-medium text-base text-[#111111]">$39.99</p>
+                    </div>
+                </div>
+                <div class=" p-2 flex bg-white rounded-lg items-center space-x-4">
+                    <div class="bg-"><img class="bg-[#EFEBE3] p-1 rounded-md" src="c2-assets/Group 16 (2).png" alt=""></div>
+
+                    <!-- product text -->
+
+                    <div>
+                        <p class="font-normal text-base text-[#111111]" ><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                        <h1 class="font-medium text-xl text-[#111111]">Potato 1 KG</h1>
+                        <p class="font-medium text-base text-[#111111]">$39.99</p>
+                    </div>
+                </div>
+                <div class="hidden p-2 sm:flex bg-white rounded-lg items-center space-x-4">
+                    <div class="bg-"><img class="bg-[#EFEBE3] p-1 rounded-md" src="c2-assets/Group 16 (1).png" alt=""></div>
+
+                    <!-- product text -->
+
+                    <div>
+                        <p class="font-normal text-base text-[#111111]" ><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                        <h1 class="font-medium text-xl text-[#111111]">Tomato 500 g</h1>
+                        <p class="font-medium text-base text-[#111111]">$39.99</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 </body>
 
 </html>
